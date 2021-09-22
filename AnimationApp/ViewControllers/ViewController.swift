@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet var forceValueLabel: UILabel!
 
     //MARK: Actions
-    @IBAction func springRunButton(_ sender: SpringButton) {
+    @IBAction func goButtonPressed(_ sender: SpringButton) {
         springMotoImageView.animation = DataManager.shared.presets.randomElement()!
         springMotoImageView.curve = DataManager.shared.curves.randomElement()!
         springMotoImageView.duration = CGFloat(DataManager.shared.durations.randomElement()!)
