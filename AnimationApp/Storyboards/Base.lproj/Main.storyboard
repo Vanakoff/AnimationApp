@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moto Racer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8x-9Q-TRh">
+                                <rect key="frame" x="20" y="20" width="335" height="47"/>
+                                <fontDescription key="fontDescription" name="Menlo-BoldItalic" family="Menlo" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zp-LN-YlD">
+                                <rect key="frame" x="20" y="77" width="335" height="27"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeV-md-2fi" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="20" y="577" width="335" height="60"/>
+                                <color key="backgroundColor" red="0.050710029900000002" green="0.19529071449999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="afx-a1-S1y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
+                                <state key="normal" title="Run!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="morph"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="springRunButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UJ1-v9-FeP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDz-9v-EjZ">
+                                <rect key="frame" x="20" y="354" width="335" height="27"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sportsbike" translatesAutoresizingMaskIntoConstraints="NO" id="zfM-lK-zti" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="72.5" y="134" width="230" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="IhV-ho-bGh"/>
+                                    <constraint firstAttribute="width" constant="230" id="VYv-Qs-6pU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="repeatCount">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="morph"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="x">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="y">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8VT-p6-os9">
+                                <rect key="frame" x="20" y="411" width="93.5" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preset:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6J-zy-vcB">
+                                        <rect key="frame" x="0.0" y="0.0" width="70.5" height="24"/>
+                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curve:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEC-Tu-SD1">
+                                        <rect key="frame" x="0.0" y="32" width="64.5" height="24"/>
+                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuY-BY-ubp">
+                                        <rect key="frame" x="0.0" y="64" width="93.5" height="24"/>
+                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Force:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0HI-19-jgJ">
+                                        <rect key="frame" x="0.0" y="96" width="62.5" height="24"/>
+                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VqS-Zr-cHc">
+                                <rect key="frame" x="123.5" y="411" width="93.5" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="preset" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reI-Tl-zsx">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="24"/>
+                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curve:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wz2-Z8-X62">
+                                        <rect key="frame" x="0.0" y="32" width="64.5" height="24"/>
+                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtT-al-Knh">
+                                        <rect key="frame" x="0.0" y="64" width="93.5" height="24"/>
+                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Force:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olQ-bN-hhl">
+                                        <rect key="frame" x="0.0" y="96" width="62.5" height="24"/>
+                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DeV-md-2fi" secondAttribute="trailing" constant="20" id="1D0-Gk-4f1"/>
+                            <constraint firstItem="x8x-9Q-TRh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1tu-jk-cxa"/>
+                            <constraint firstItem="0zp-LN-YlD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="265-yB-5Dg"/>
+                            <constraint firstItem="VqS-Zr-cHc" firstAttribute="leading" secondItem="8VT-p6-os9" secondAttribute="trailing" constant="10" id="6mW-GZ-GxO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x8x-9Q-TRh" secondAttribute="trailing" constant="20" id="DA9-87-rUD"/>
+                            <constraint firstItem="x8x-9Q-TRh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="DVl-RI-Ubh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HDz-9v-EjZ" secondAttribute="trailing" constant="20" id="Dgm-Za-bVU"/>
+                            <constraint firstItem="HDz-9v-EjZ" firstAttribute="top" secondItem="zfM-lK-zti" secondAttribute="bottom" constant="20" id="EVQ-gH-KfH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0zp-LN-YlD" secondAttribute="trailing" constant="20" id="GLr-Zy-JXI"/>
+                            <constraint firstItem="DeV-md-2fi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="L4i-Ns-hN5"/>
+                            <constraint firstItem="zfM-lK-zti" firstAttribute="top" secondItem="0zp-LN-YlD" secondAttribute="bottom" constant="30" id="MI4-Tp-IPH"/>
+                            <constraint firstItem="VqS-Zr-cHc" firstAttribute="top" secondItem="HDz-9v-EjZ" secondAttribute="bottom" constant="30" id="NTW-Ko-Xeb"/>
+                            <constraint firstItem="8VT-p6-os9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YKg-NL-HRy"/>
+                            <constraint firstItem="HDz-9v-EjZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dO8-WW-m7r"/>
+                            <constraint firstItem="0zp-LN-YlD" firstAttribute="top" secondItem="x8x-9Q-TRh" secondAttribute="bottom" constant="10" id="eL5-gT-ts4"/>
+                            <constraint firstItem="zfM-lK-zti" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g9g-ZX-4Fs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DeV-md-2fi" secondAttribute="bottom" constant="30" id="gOi-bZ-bvu"/>
+                            <constraint firstItem="8VT-p6-os9" firstAttribute="top" secondItem="HDz-9v-EjZ" secondAttribute="bottom" constant="30" id="joA-73-noD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="curveValue" destination="wz2-Z8-X62" id="PDp-0l-26t"/>
+                        <outlet property="durationValue" destination="JtT-al-Knh" id="w7h-vE-dn0"/>
+                        <outlet property="forceValue" destination="olQ-bN-hhl" id="n5T-Ow-3qo"/>
+                        <outlet property="presetValueLabel" destination="reI-Tl-zsx" id="OSH-ey-bzX"/>
+                        <outlet property="springMotoImageView" destination="zfM-lK-zti" id="Afk-4N-Q3n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.399999999999999" y="74.212893553223395"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sportsbike" width="393.1300048828125" height="358.92999267578125"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
