@@ -35,7 +35,7 @@
                                     <constraint firstAttribute="height" constant="60" id="afx-a1-S1y"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
-                                <state key="normal" title="Run!">
+                                <state key="normal" title="Go!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -74,26 +74,8 @@
                                     <constraint firstAttribute="width" constant="230" id="VYv-Qs-6pU"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="repeatCount">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="rotate">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="morph"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="flash"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="x">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="y">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8VT-p6-os9">
@@ -126,7 +108,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VqS-Zr-cHc">
-                                <rect key="frame" x="123.5" y="411" width="93.5" height="120"/>
+                                <rect key="frame" x="123.5" y="411" width="85" height="120"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="preset" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reI-Tl-zsx">
                                         <rect key="frame" x="0.0" y="0.0" width="64" height="24"/>
@@ -134,20 +116,20 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curve:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wz2-Z8-X62">
-                                        <rect key="frame" x="0.0" y="32" width="64.5" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="curve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wz2-Z8-X62">
+                                        <rect key="frame" x="0.0" y="32" width="55.5" height="24"/>
                                         <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtT-al-Knh">
-                                        <rect key="frame" x="0.0" y="64" width="93.5" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtT-al-Knh">
+                                        <rect key="frame" x="0.0" y="64" width="85" height="24"/>
                                         <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Force:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olQ-bN-hhl">
-                                        <rect key="frame" x="0.0" y="96" width="62.5" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="force" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olQ-bN-hhl">
+                                        <rect key="frame" x="0.0" y="96" width="52.5" height="24"/>
                                         <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -179,9 +161,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="curveValue" destination="wz2-Z8-X62" id="PDp-0l-26t"/>
-                        <outlet property="durationValue" destination="JtT-al-Knh" id="w7h-vE-dn0"/>
-                        <outlet property="forceValue" destination="olQ-bN-hhl" id="n5T-Ow-3qo"/>
+                        <outlet property="curveValueLabel" destination="wz2-Z8-X62" id="PDp-0l-26t"/>
+                        <outlet property="durationValueLabel" destination="JtT-al-Knh" id="w7h-vE-dn0"/>
+                        <outlet property="forceValueLabel" destination="olQ-bN-hhl" id="n5T-Ow-3qo"/>
                         <outlet property="presetValueLabel" destination="reI-Tl-zsx" id="OSH-ey-bzX"/>
                         <outlet property="springMotoImageView" destination="zfM-lK-zti" id="Afk-4N-Q3n"/>
                     </connections>

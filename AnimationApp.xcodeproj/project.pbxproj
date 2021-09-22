@@ -135,11 +135,11 @@
 		68F5DB1326F9294B00FFA291 /* AnimationApp */ = {
 			isa = PBXGroup;
 			children = (
-				68CE7C4F26FBCBF600303AE0 /* Services */,
 				68B1811526FAA30C0053DC6E /* App */,
 				68B1811426FAA28D0053DC6E /* Resources */,
-				68B1811226FAA23E0053DC6E /* ViewControllers */,
 				68B1811726FAA34B0053DC6E /* Models */,
+				68CE7C4F26FBCBF600303AE0 /* Services */,
+				68B1811226FAA23E0053DC6E /* ViewControllers */,
 				68B1811326FAA26A0053DC6E /* Storyboards */,
 			);
 			path = AnimationApp;

@@ -7,19 +7,15 @@
 
 import Spring
 
-
 class ViewController: UIViewController {
         
-
     //MARK: Outlets
     @IBOutlet var springMotoImageView: SpringImageView!
     
-    
     @IBOutlet var presetValueLabel: UILabel!
-    @IBOutlet var curveValue: UILabel!
-    @IBOutlet var durationValue: UILabel!
-    @IBOutlet var forceValue: UILabel!
-    
+    @IBOutlet var curveValueLabel: UILabel!
+    @IBOutlet var durationValueLabel: UILabel!
+    @IBOutlet var forceValueLabel: UILabel!
 
     //MARK: Actions
     @IBAction func springRunButton(_ sender: SpringButton) {
@@ -30,9 +26,9 @@ class ViewController: UIViewController {
         springMotoImageView.animate()
         
         presetValueLabel.text = springMotoImageView.animation
-        curveValue.text = springMotoImageView.curve
-        durationValue.text = String("\(springMotoImageView.duration)")
-        forceValue.text = String("\(springMotoImageView.force)")
+        curveValueLabel.text = springMotoImageView.curve
+        durationValueLabel.text = String("\(springMotoImageView.duration)")
+        forceValueLabel.text = String("\(springMotoImageView.force)")
         
         sender.setTitle(springMotoImageView.animation, for: .normal)
         
@@ -40,6 +36,4 @@ class ViewController: UIViewController {
         sender.force = 0.1
         sender.animate()
     }
-    
 }
-

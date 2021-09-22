@@ -6,7 +6,7 @@
 //
 
 struct Animation {
-    let preset: String
+    var preset: String
     let curve: String
     let force: Double
     let duration: Double

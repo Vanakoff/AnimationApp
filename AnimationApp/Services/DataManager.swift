@@ -6,6 +6,7 @@
 //
 
 class DataManager {
+    
     static let shared = DataManager()
     
     let presets = ["shake", "pop", "swing", "wobble",
